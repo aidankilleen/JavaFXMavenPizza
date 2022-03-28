@@ -13,7 +13,7 @@ import javafx.fxml.Initializable;
  *
  * @author Daram
  */
-public class FXMLController implements Initializable {
+public class DaraController implements Initializable {
 
     /**
      * Initializes the controller class.
