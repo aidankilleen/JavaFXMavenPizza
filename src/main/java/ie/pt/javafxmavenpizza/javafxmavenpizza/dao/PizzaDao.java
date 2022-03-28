@@ -23,9 +23,9 @@ public class PizzaDao {
             conn = DriverManager.getConnection(connectionString, "username", "password");
             
         } catch (ClassNotFoundException ex) {
-            
+            System.out.println("Can't load driver");
         } catch (SQLException ex) {
-            
+            System.out.println("Can't connect to " + connectionString);
         }
         
     }

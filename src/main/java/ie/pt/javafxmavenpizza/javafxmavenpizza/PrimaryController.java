@@ -12,7 +12,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
 
 public class PrimaryController implements Initializable {
-
     
     @FXML
     ListView lstPizzas;
@@ -23,16 +22,12 @@ public class PrimaryController implements Initializable {
     private void switchToSecondary() throws IOException {
         App.setRoot("secondary");
         
-
- 
-        
-        
-        
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-               List<Pizza> pizzas = dao.getPizzas();
+               
+        List<Pizza> pizzas = dao.getPizzas();
         
         for(Pizza p : pizzas) {
             lstPizzas.getItems().add(p);
